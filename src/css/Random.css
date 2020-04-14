@@ -1,0 +1,32 @@
+.Random {
+  display: flex;
+  flex-direction: column;
+  margin: 80px auto;
+  align-items: center;
+}
+.Random input {
+  background-color: #e3edf7;
+  box-shadow: -3px -6px 16px #fff, 3px 3px 16px #a3b1c6;
+  border: 0;
+  padding: 20px 0px;
+  width: 90%;
+  border-radius: 15px;
+  display: block;
+  margin: 10px auto;
+  color: #bd21d9;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.Random input:focus,
+.Random input:hover {
+  box-shadow: inset -3px -6px 8px #fff, inset 3px 3px 8px #a3b1c6;
+}
+.Random .start {
+  margin: 30px 0;
+  background-color: #bd21d9;
+  padding: 20px 50px;
+  box-shadow: -3px -6px 8px #fff, 3px 3px 8px #bd21d9;
+  color: #fff;
+  font-size: 1.3rem;
+}

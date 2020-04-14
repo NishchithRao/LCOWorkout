@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #e3edf7; /*e0e5ec */
+  color: #453f67; /* #454f67*/
+  max-height: 100vh;
+}
+.Home h1 {
+  font-size: 1.8rem;
+  margin: 0.3rem 0;
+  margin-top: 3rem;
+  color: #000;
+}
+.Home h2 {
+  color: gray;
+  font-size: 1.1rem;
+  margin-top: 0.2rem;
+  margin-bottom: 3rem;
+}
+button {
+  background-color: #e3edf7;
+  box-shadow: -3px -6px 16px #fff, 3px 3px 16px #a3b1c6;
+  border: 0;
+  border-radius: 15px;
+  color: #414051;
+  font-weight: bold;
+}
+.Home button.choose {
+  font-size: 1.2rem;
+  padding: 20px 30px;
+  margin-top: 0;
+  transition: 0.2s box-shadow ease-in-out;
+}
+button:hover,
+button:focus,
+input:focus {
+  border: none;
+  outline: none;
+}
+button:hover,
+button:hover {
+  box-shadow: inset -3px -6px 8px #fff, inset 3px 3px 8px #a3b1c6;
+}
+.Home p span {
+  font-size: 3.8rem;
+  padding-right: 3px;
+  font-weight: 100;
+  color: #bd21d9;
+}
+.Home p {
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.Home .choice-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+}

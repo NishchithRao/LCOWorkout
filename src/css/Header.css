@@ -1,0 +1,36 @@
+body {
+  height: 100%;
+}
+.Header {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.Header button {
+  padding: 8px 10px;
+}
+.Header .burger div {
+  width: 30px;
+  height: 3px;
+  background-color: #414051;
+  margin: 5px 0;
+  border-radius: 5px;
+  background-color: #bd21d9;
+}
+.Header .burger .b {
+  width: 10px;
+}
+.Header .burger .b-1 {
+  width: 20px;
+}
+.Header button.angleBracket {
+  font-size: 1.5rem;
+  padding: 10px 15px;
+  color: #bd21d9;
+}
+.Header .title {
+  font-weight: bold;
+  text-transform: uppercase;
+}
