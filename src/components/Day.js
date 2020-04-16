@@ -1,124 +1,163 @@
 import React, { useState } from "react";
-import Base from "./Base";
 import Exercises from "./Exercises";
-import { Link } from "react-router-dom";
+import Base from "./Base";
+import { withRouter } from "react-router-dom";
 
-const Day = () => {
-  const [exercise, setExercise] = useState({
-    num: new Date().getDay(),
+const PassExercises = (props) => {
+  const [exercise] = useState({
+    num: JSON.parse(localStorage.getItem("num1")),
     workout: [
       {
         name: "Pushups",
-        duration: 4,
-        url: "../assets/audio/18.mp3",
-        day: [0, 1],
+        duration: 40,
+        url: "/images/1.png",
       },
       {
         name: "Flat Bench Press",
-        duration: 3,
-        url: "../assets/audio/18.mp3",
-        day: [1, 2],
+        duration: 30,
+        url: "/images/1.png",
       },
       {
         name: "Decline Crunches",
-        duration: 3,
-        url: "../assets/audio/18.mp3",
-        day: [2, 3],
+        duration: 50,
+        url: "/images/14.png",
       },
       {
         name: "Incline Bench Press",
-        duration: 3,
-        url: "./assets/audio/18.mp3",
-        day: [3, 4],
+        duration: 25,
+        url: "/images/11.png",
       },
       {
         name: "Bicep Curls",
-        duration: 3,
-        url: "../assets/audio/18.mp3",
-        day: [4, 5],
+        duration: 60,
+        url: "/images/7.png",
       },
       {
         name: "Shoulder Press",
-        duration: 3,
-        url: "../assets/audio/18.mp3",
-        day: [5, 6],
+        duration: 45,
+        url: "/images/13.png",
       },
       {
-        name: "Situps",
-        duration: 3,
-        url: "../assets/audio/18.mp3",
-        day: [0, 1],
+        name: "Pilates",
+        duration: 30,
+        url: "/images/5.png",
       },
       {
-        name: "Vrukshasanaa",
-        duration: 3,
-        url: "../assets/audio/18.mp3",
-        day: [1, 2],
+        name: "Plank",
+        duration: 20,
+        url: "/images/8.png",
       },
       {
         name: "Vrukshasan",
-        duration: 3,
-        url: "../assets/audio/18.mp3",
-        day: [2, 3],
+        duration: 20,
+        url: "/images/9.png",
       },
       {
-        name: "Vrukshasan",
-        duration: 3,
-        url: "../assets/audio/18.mp3",
-        day: [3, 4],
+        name: "Abdominal Crunches",
+        duration: 20,
+        url: "/images/2.png",
       },
       {
         name: "Nidrasan",
-        duration: 3,
-        url: "../assets/audio/18.mp3",
-        day: [4, 5],
+        duration: 30,
+        url: "/images/3.png",
       },
       {
         name: "Shavasan",
-        duration: 3,
-        url: "../assets/audio/18.mp3",
-        day: [5, 6],
+        duration: 30,
+        url: "/images/1.png",
       },
       {
         name: "Pull ups",
         duration: 3,
-        url: "../assets/audio/18.mp3",
-        day: [13, 14],
+        url: "/images/1.png",
       },
       {
         name: "Pushups",
         duration: 4,
-        url: "../assets/audio/18.mp3",
-        d3ay: 43,
-      },
-      {
-        name: "Pushups",
-        duration: 4,
-        url: "../assets/audio/18.mp3",
-        day: 3,
-      },
-      {
-        name: "Pushups",
-        duration: 4,
-        url: "../assets/audio/18.mp3",
-        day: 4,
-      },
-      {
-        name: "Pushups",
-        duration: 4,
-        url: "../assets/audio/18.mp3",
-        day: 6,
+        url: "/images/1.png",
       },
     ],
   });
 
   const { workout, num } = exercise;
+  localStorage.setItem(
+    "selected",
+    JSON.stringify([
+      workout[num[0]],
+      workout[num[1]],
+      workout[num[2]],
+      workout[num[3]],
+      workout[num[4]],
+    ])
+  );
+  localStorage.setItem("exerciseNum", 0);
   return (
     <div>
       <Base />
-      <Exercises workout={workout[num]} number={num} />
+
+      <div
+        id="carouselExampleControls1"
+        className="carousel slide mobile-carousel"
+        data-ride="carousel"
+      >
+        <div id="ExerciseIndicators" className="carousel slide">
+          <ol className="carousel-indicators">
+            <li
+              data-target="#ExerciseIndicators"
+              data-slide-to="0"
+              className="active"
+            ></li>
+            <li data-target="#ExerciseIndicators" data-slide-to="1"></li>
+            <li data-target="#ExerciseIndicators" data-slide-to="2"></li>
+            <li data-target="#ExerciseIndicators" data-slide-to="3"></li>
+            <li data-target="#ExerciseIndicators" data-slide-to="4"></li>
+          </ol>
+          <div className="carousel-inner">
+            <div className="carousel-item active my-5">
+              <Exercises workout={workout[num[0]]} number={num[0]} />
+            </div>
+            <div className="carousel-item my-5">
+              <Exercises workout={workout[num[1]]} number={num[1]} />
+            </div>
+            <div className="carousel-item my-5">
+              <Exercises workout={workout[num[2]]} number={num[3]} />
+            </div>
+            <div className="carousel-item my-5">
+              <Exercises workout={workout[num[3]]} number={num[3]} />
+            </div>
+            <div className="carousel-item my-5">
+              <Exercises workout={workout[num[4]]} number={num[4]} />
+            </div>
+          </div>
+          <a
+            className="carousel-control-prev"
+            href="#carouselExampleControls1"
+            role="button"
+            data-slide="prev"
+          >
+            <span
+              className=" carousel-control-prev-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="sr-only">Previous</span>
+          </a>
+          <a
+            className="carousel-control-next"
+            href="#carouselExampleControls1"
+            role="button"
+            data-slide="next"
+          >
+            <span
+              className=" carousel-control-next-icon"
+              aria-hidden="true"
+            ></span>
+            <span className="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default Day;
+export default withRouter(PassExercises);

@@ -1,0 +1,11 @@
+.completed {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.completed h1 {
+  font-size: 3rem;
+  color: #bd21d9;
+  font-weight: bold;
+}

@@ -2,25 +2,20 @@ import React, { useState } from "react";
 import Base from "./Base";
 import "../css/Home.css";
 import { Link, withRouter } from "react-router-dom";
-import { generate } from "./randomGennerator";
 import "../css/Random.css";
 
 const Random = () => {
-  const [set, setSet] = useState("");
-  const [arr, setArr] = useState([]);
-  localStorage.setItem("set", set);
+  const [set, setSet] = useState(1);
   const handleChange = (event) => {
     setSet(event.target.value);
   };
-  if (arr.length >= 0 && arr.length < 5) {
-    setArr([...arr, generate(arr)]);
-  }
-  localStorage.setItem("array", JSON.stringify(Array.from(arr)));
+  localStorage.setItem("set", set);
 
   return (
     <div>
-      <Base title={"LCO Workout"} />
+      <Base />
       <div className="Random">
+        <p className="setText">Enter the number of sets:</p>
         <input
           type="number"
           placeholder="No. of Sets:"
@@ -28,16 +23,7 @@ const Random = () => {
           onChange={handleChange}
           value={set}
         />
-        <Link
-          to={{
-            pathname: `${
-              parseInt(localStorage.getItem("choice")) ? "/day" : "/select"
-            }`,
-            state: {
-              name: "singham",
-            },
-          }}
-        >
+        <Link to="/exercise">
           <button className="start">Start</button>
         </Link>
       </div>

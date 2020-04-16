@@ -2,25 +2,20 @@ import React, { useState } from "react";
 import { Link, withRouter } from "react-router-dom";
 import "../css/Exercises.css";
 const Exercises = (props) => {
-  const [values, setValues] = useState({
+  const [values] = useState({
     name: props.workout.name,
     duration: props.workout.duration,
-    set:
-      localStorage.getItem("set") === ""
-        ? 1
-        : parseInt(localStorage.getItem("set")),
     url: props.workout.url,
     number: props.number,
   });
-  const { name, duration, set, url, number } = values;
-  console.log(name, `"${url}"`);
-
+  const { name, duration, url } = values;
   return (
     <Link
+      className="selectExercises"
       to={{
-        pathname: "/exercise",
+        pathname: "/random",
         state: {
-          name: name,
+          Exercises: props.workout,
         },
       }}
     >
@@ -28,7 +23,7 @@ const Exercises = (props) => {
         <img src={url} alt="" />
         <div className="main-det">
           <p className="name">{name}</p>
-          <p>{duration} mins</p>
+          <p>{duration} secs</p>
         </div>
         <button className="start-card">Start</button>
       </div>

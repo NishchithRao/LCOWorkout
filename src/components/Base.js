@@ -1,10 +1,10 @@
 import React from "react";
 import Header from "./Header";
 
-const Base = props => {
+const Base = (props) => {
   return (
     <div>
-      <Header title={props.title} />
+      <Header />
     </div>
   );
 };

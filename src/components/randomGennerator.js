@@ -6,7 +6,7 @@ exports.generate = (arr) => {
     if (number <= 10) {
       return number + Math.floor(Math.random() * 10) - 1;
     } else {
-      return number + Math.floor(Math.random() * 10);
+      return number + Math.floor(Math.random() * 10.1);
     }
   }
 };

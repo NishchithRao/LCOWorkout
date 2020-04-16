@@ -3,10 +3,14 @@ body {
 }
 .Header {
   margin: 20px 0;
+  margin-top: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 3px 3px 10px rgba(70, 70, 70, 0.12);
 }
 .Header button {
   padding: 8px 10px;
@@ -19,13 +23,7 @@ body {
   border-radius: 5px;
   background-color: #bd21d9;
 }
-.Header .burger .b {
-  width: 10px;
-}
-.Header .burger .b-1 {
-  width: 20px;
-}
-.Header button.angleBracket {
+button.angleBracket {
   font-size: 1.5rem;
   padding: 10px 15px;
   color: #bd21d9;

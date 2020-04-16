@@ -1,0 +1,20 @@
+.Break {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+.Break h1 {
+  color: #bd21d9;
+  font-size: 3rem;
+}
+.react-sweet-progress-circle-outer {
+  margin: 50px auto;
+}
+.Break p {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: bold;
+}

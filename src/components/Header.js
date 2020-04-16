@@ -7,17 +7,12 @@ const Header = (props) => {
     <div className="Header">
       <div className="creator">
         <Link to="/creator">
-          <button className="burger">
-            <div className="b"></div>
-            <div className="b-1"></div>
-            <div></div>
-          </button>
+          <button className="burger angleBracket">&lt;/&gt;</button>
         </Link>
       </div>
-      <div className="title">{props.title}</div>
+      <div className="title">LCO Workout &trade;</div>
       <Link to="/">
         <button className="angleBracket">
-          {" "}
           <i className="fa fa-home"></i>
         </button>
       </Link>

@@ -6,6 +6,8 @@ import ConductExercise from "./components/ConductExercise";
 import PassExercises from "./components/PassExercises";
 import Random from "./components/Random";
 import Day from "./components/Day";
+import Break from "./components/Break";
+import Compeleted from "./components/Compeleted";
 const Routes = () => {
   return (
     <BrowserRouter>
@@ -16,6 +18,8 @@ const Routes = () => {
         <Route path="/creator" exact component={Creator} />
         <Route path="/exercise" exact component={ConductExercise} />
         <Route path="/select" exact component={PassExercises} />
+        <Route path="/break" exact component={Break} />
+        <Route path="/completed" exact component={Compeleted} />
       </Switch>
     </BrowserRouter>
   );

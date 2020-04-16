@@ -30,3 +30,7 @@
   color: #fff;
   font-size: 1.3rem;
 }
+p.setText {
+  font-size: 1.2rem;
+  font-weight: bold;
+}

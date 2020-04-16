@@ -1,0 +1,36 @@
+.conductExercise .name {
+  font-weight: bold;
+  font-size: 1.8rem;
+  text-align: center;
+}
+.conductExercise .img-container {
+  display: flex;
+  justify-content: center;
+}
+.conductExercise .img-container img {
+  width: 300px;
+  filter: drop-shadow(3px 6px 5px #a3b1c6);
+}
+.progress-bar {
+  position: relative;
+  width: 300px;
+  height: 10px;
+  box-shadow: inset -3px -6px 20px #fff, inset -3px -6px 20px rgba(0, 0, 0, 0.5);
+  margin: 30px auto;
+  border-radius: 5px;
+  background-color: #ececec;
+}
+.conductExercise .time {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.conductExercise .displaySet {
+  text-align: center;
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 30px auto;
+}
+.conductExercise .Set {
+  color: #bd21d9;
+}
