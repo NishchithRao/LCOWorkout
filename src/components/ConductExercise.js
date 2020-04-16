@@ -108,7 +108,8 @@ const ConductExercise = (props) => {
           status={"success"}
         />
         <p className="time">
-          0{time / 60}:{time % 60 < 10 ? "0" + (time % 60) : time % 60}
+          0{Math.ceil(time / 60)}:
+          {time % 60 < 10 ? "0" + (time % 60) : time % 60}
         </p>
         <Sound
           playStatus={status}

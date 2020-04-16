@@ -9,72 +9,57 @@ const PassExercises = (props) => {
     workout: [
       {
         name: "Pushups",
-        duration: 40,
+        duration: 90,
         url: "/images/1.png",
       },
       {
         name: "Flat Bench Press",
-        duration: 30,
+        duration: 120,
         url: "/images/1.png",
       },
       {
         name: "Decline Crunches",
-        duration: 50,
+        duration: 100,
         url: "/images/14.png",
       },
       {
         name: "Incline Bench Press",
-        duration: 25,
+        duration: 120,
         url: "/images/11.png",
       },
       {
         name: "Bicep Curls",
-        duration: 60,
+        duration: 150,
         url: "/images/7.png",
       },
       {
         name: "Shoulder Press",
-        duration: 45,
+        duration: 145,
         url: "/images/13.png",
       },
       {
         name: "Pilates",
-        duration: 30,
+        duration: 60,
         url: "/images/5.png",
       },
       {
         name: "Plank",
-        duration: 20,
+        duration: 120,
         url: "/images/8.png",
       },
       {
         name: "Vrukshasan",
-        duration: 20,
+        duration: 60,
         url: "/images/9.png",
       },
       {
         name: "Abdominal Crunches",
-        duration: 20,
+        duration: 130,
         url: "/images/2.png",
       },
       {
-        name: "Nidrasan",
-        duration: 30,
-        url: "/images/3.png",
-      },
-      {
-        name: "Shavasan",
-        duration: 30,
-        url: "/images/1.png",
-      },
-      {
-        name: "Pull ups",
-        duration: 3,
-        url: "/images/1.png",
-      },
-      {
         name: "Pushups",
-        duration: 4,
+        duration: 140,
         url: "/images/1.png",
       },
     ],
