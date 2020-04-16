@@ -10,7 +10,7 @@ import Break from "./components/Break";
 import Compeleted from "./components/Compeleted";
 const Routes = () => {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/random" exact component={Random} />
