@@ -60,7 +60,7 @@ const PassExercises = (props) => {
       },
       {
         name: "Pushups",
-        duration: 4,
+        duration: 40,
         url: "/images/1.png",
       },
     ],
