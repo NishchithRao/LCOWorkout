@@ -23,7 +23,7 @@ const Exercises = (props) => {
         <img src={process.env.PUBLIC_URL + url} alt="" />
         <div className="main-det">
           <p className="name">{name}</p>
-          <p>{duration} secs</p>
+          <p>{duration / 60} mins</p>
         </div>
         <button className="start-card">Start</button>
       </div>

@@ -107,7 +107,9 @@ const ConductExercise = (props) => {
           percent={progress}
           status={"success"}
         />
-        <p className="time">00:{time < 10 ? "0" + time : time}</p>
+        <p className="time">
+          0{time / 60}:{time % 60 < 10 ? "0" + (time % 60) : time % 60}
+        </p>
         <Sound
           playStatus={status}
           url={songs[parseInt(localStorage.getItem("exerciseNum"))]}
