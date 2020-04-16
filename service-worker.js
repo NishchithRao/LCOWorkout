@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/LCOWorkout/precache-manifest.ff4597ba3a6d9a3c1d654a4f256873fc.js"
+  "/LCOWorkout/precache-manifest.832bd74843b40a1547abc8d26bd9cd1b.js"
 );
 
 self.addEventListener('message', (event) => {
