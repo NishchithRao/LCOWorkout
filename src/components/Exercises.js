@@ -20,7 +20,7 @@ const Exercises = (props) => {
       }}
     >
       <div className="card">
-        <img src={url} alt="" />
+        <img src={process.env.PUBLIC_URL + url} alt="" />
         <div className="main-det">
           <p className="name">{name}</p>
           <p>{duration} secs</p>

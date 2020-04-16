@@ -89,7 +89,7 @@ const ConductExercise = (props) => {
           <span className="Set">{showSet}</span>
         </p>
         <div className="img-container">
-          <img src={url} alt="" />
+          <img src={process.env.PUBLIC_URL + url} alt="" />
         </div>
         <Progress
           style={{
