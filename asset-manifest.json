@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/LCOWorkout/static/css/main.d3bfce21.chunk.css",
-    "main.js": "/LCOWorkout/static/js/main.d51576da.chunk.js",
-    "main.js.map": "/LCOWorkout/static/js/main.d51576da.chunk.js.map",
+    "main.js": "/LCOWorkout/static/js/main.675e69a4.chunk.js",
+    "main.js.map": "/LCOWorkout/static/js/main.675e69a4.chunk.js.map",
     "runtime-main.js": "/LCOWorkout/static/js/runtime-main.0239b763.js",
     "runtime-main.js.map": "/LCOWorkout/static/js/runtime-main.0239b763.js.map",
     "static/css/2.55146207.chunk.css": "/LCOWorkout/static/css/2.55146207.chunk.css",
     "static/js/2.5633a95d.chunk.js": "/LCOWorkout/static/js/2.5633a95d.chunk.js",
     "static/js/2.5633a95d.chunk.js.map": "/LCOWorkout/static/js/2.5633a95d.chunk.js.map",
     "index.html": "/LCOWorkout/index.html",
-    "precache-manifest.ef08e6a5abf5aa674257dcf0b920b049.js": "/LCOWorkout/precache-manifest.ef08e6a5abf5aa674257dcf0b920b049.js",
+    "precache-manifest.e2809c98bd09b0f99fd8e0888b441685.js": "/LCOWorkout/precache-manifest.e2809c98bd09b0f99fd8e0888b441685.js",
     "service-worker.js": "/LCOWorkout/service-worker.js",
     "static/css/2.55146207.chunk.css.map": "/LCOWorkout/static/css/2.55146207.chunk.css.map",
     "static/css/main.d3bfce21.chunk.css.map": "/LCOWorkout/static/css/main.d3bfce21.chunk.css.map",
@@ -26,6 +26,6 @@
     "static/css/2.55146207.chunk.css",
     "static/js/2.5633a95d.chunk.js",
     "static/css/main.d3bfce21.chunk.css",
-    "static/js/main.d51576da.chunk.js"
+    "static/js/main.675e69a4.chunk.js"
   ]
 }
