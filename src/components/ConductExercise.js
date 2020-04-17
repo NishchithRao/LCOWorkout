@@ -31,17 +31,17 @@ const ConductExercise = (props) => {
   const [time, setTime] = useState(duration);
   const [showSet, setShowSet] = useState(0);
   const [redirect, setRedirect] = useState(false);
-  const [progress, setProgress] = useState(1);
+  const [progress, setProgress] = useState(0);
 
   setTimeout(() => {
     setStatus(Sound.status.PAUSED);
-  }, duration * 1050);
+  }, duration * 1000);
 
   const Redirectto = () => {
     {
       setTimeout(() => {
         setRedirect(true);
-      }, duration * 1100);
+      }, duration * 1040);
       if (redirect) {
         return (
           <Redirect
@@ -67,6 +67,7 @@ const ConductExercise = (props) => {
 
   useEffect(() => {
     console.log(songs[localStorage.getItem("exerciseNum")]);
+    console.log(progress);
     const progresses =
       progress < 100 &&
       setInterval(() => setProgress(progress + 100 / duration), 1000);
@@ -108,7 +109,7 @@ const ConductExercise = (props) => {
           status={"success"}
         />
         <p className="time">
-          0{Math.ceil(time / 60)}:
+          0{Math.floor(time / 60)}:
           {time % 60 < 10 ? "0" + (time % 60) : time % 60}
         </p>
         <Sound
