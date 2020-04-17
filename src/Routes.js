@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, BrowserRouter, Switch } from "react-router-dom";
+import { Route, HashRouter, Switch } from "react-router-dom";
 import Creator from "./components/Creator";
 import Home from "./components/Home";
 import ConductExercise from "./components/ConductExercise";
@@ -10,7 +10,7 @@ import Break from "./components/Break";
 import Compeleted from "./components/Compeleted";
 const Routes = () => {
   return (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <HashRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route path="/" exact component={Home} />
         <Route path="/random" exact component={Random} />
@@ -21,7 +21,7 @@ const Routes = () => {
         <Route path="/break" exact component={Break} />
         <Route path="/completed" exact component={Compeleted} />
       </Switch>
-    </BrowserRouter>
+    </HashRouter>
   );
 };
 

@@ -65,7 +65,6 @@ const PassExercises = (props) => {
       },
     ],
   });
-
   const { workout, num } = exercise;
   localStorage.setItem(
     "selected",
@@ -81,7 +80,7 @@ const PassExercises = (props) => {
   return (
     <div>
       <Base />
-
+      <h3 className="text-center">Random Mode</h3>
       <div
         id="carouselExampleControls1"
         className="carousel slide mobile-carousel"

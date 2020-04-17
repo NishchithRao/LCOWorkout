@@ -1,12 +1,14 @@
 exports.generate = (arr) => {
   let number = Math.ceil(Math.random() * 10);
-  if (arr.indexOf(number) === -1) {
+  if (arr.indexOf(number) === -1 && number <= 10) {
     return number;
   } else {
     if (number <= 10) {
-      return number + Math.floor(Math.random() * 10) - 1;
+      localStorage.setItem("test1", number);
+      return this.generate(arr);
     } else {
-      return number + Math.floor(Math.random() * 10.1);
+      localStorage.setItem("test2", number);
+      return number - 10;
     }
   }
 };

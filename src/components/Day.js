@@ -76,11 +76,21 @@ const PassExercises = (props) => {
       workout[num[4]],
     ])
   );
+  const [day, setDay] = useState([
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ]);
+  const today = new Date();
   localStorage.setItem("exerciseNum", 0);
   return (
     <div>
       <Base />
-
+      <h3 className="text-center">{day[today.getDay()]}&nbsp;Specials</h3>
       <div
         id="carouselExampleControls1"
         className="carousel slide mobile-carousel"
